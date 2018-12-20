@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.umeng.soexample.gouwuchefenlei.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/la"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <TextView
+                android:id="@+id/fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/gwc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/la"
+            ></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</LinearLayout>
